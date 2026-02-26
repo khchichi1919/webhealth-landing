@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citrus Burn Review | Support Your Weight Goals</title>
-  <meta name="description" content="Independent Citrus Burn review: benefits, who it helps, and how to get started." />
+  <title>Citrus Burn Review | Clean, Honest, Professional</title>
+  <meta name="description" content="Independent Citrus Burn review with clear benefits, realistic expectations, and official offer access." />
   <style>
     :root{
-      --bg:#0b1020;
-      --bg2:#121933;
-      --card:rgba(255,255,255,.06);
-      --text:#eef3ff;
-      --muted:#a7b3d6;
-      --primary:#43d4ff;
-      --accent:#7dffba;
-      --border:rgba(255,255,255,.14);
-      --radius:18px;
-      --shadow:0 20px 45px rgba(0,0,0,.35);
+      --bg:#f6f9fc;
+      --surface:#ffffff;
+      --text:#142033;
+      --muted:#607089;
+      --line:#e6edf5;
+      --primary:#1f7ae0;
+      --primary-soft:#e9f2ff;
+      --accent:#1ab07a;
+      --shadow:0 10px 30px rgba(16, 35, 62, .08);
+      --radius:16px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -24,227 +24,329 @@
       margin:0;
       font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
       color:var(--text);
-      background:
-        radial-gradient(900px 400px at 10% -10%, rgba(67,212,255,.16), transparent 60%),
-        radial-gradient(900px 450px at 95% 0%, rgba(125,255,186,.14), transparent 60%),
-        linear-gradient(180deg,var(--bg),var(--bg2));
-      line-height:1.65;
+      background:var(--bg);
+      line-height:1.7;
     }
     .container{width:min(1120px,92%);margin:auto}
-    .btn{
-      display:inline-block;
-      padding:14px 24px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:700;
-      color:#051222;
-      background:linear-gradient(135deg,var(--primary),var(--accent));
-      box-shadow:0 12px 28px rgba(67,212,255,.35);
-      transition:.2s ease;
-    }
-    .btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
-    .btn-outline{
-      background:transparent;color:var(--text);
-      border:1px solid var(--border);box-shadow:none
-    }
-
     .topbar{
-      position:sticky;top:0;z-index:999;
-      backdrop-filter:blur(8px);
-      background:rgba(8,12,26,.6);
-      border-bottom:1px solid rgba(255,255,255,.08)
+      background:#fff;
+      border-bottom:1px solid var(--line);
+      position:sticky;top:0;z-index:100;
     }
     .topbar-inner{
       display:flex;justify-content:space-between;align-items:center;
-      padding:12px 0;gap:10px
+      padding:12px 0;gap:12px;flex-wrap:wrap;
     }
-    .pill{
-      padding:7px 12px;border-radius:999px;font-size:.85rem;font-weight:700;
-      background:rgba(125,255,186,.16);border:1px solid rgba(125,255,186,.35)
+    .brand{
+      font-weight:800;
+      letter-spacing:.2px;
+      color:#0f2b50;
+    }
+    .badge{
+      font-size:.82rem;
+      color:#0f4e9d;
+      background:var(--primary-soft);
+      border:1px solid #d8e8ff;
+      border-radius:999px;
+      padding:6px 10px;
+      font-weight:700;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+      font-weight:700;
+      border-radius:999px;
+      padding:12px 20px;
+      transition:.2s;
+    }
+    .btn-primary{
+      color:#fff;
+      background:linear-gradient(135deg,#1f7ae0,#195fb8);
+      box-shadow:0 10px 24px rgba(31,122,224,.22);
+    }
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-light{
+      color:#1f7ae0;
+      background:#fff;
+      border:1px solid #cfe0f7;
     }
 
-    .hero{padding:60px 0 36px;display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center}
+    .hero{
+      padding:54px 0 28px;
+      display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;
+    }
     .kicker{
       display:inline-block;
-      color:var(--accent);font-size:.78rem;font-weight:700;
-      letter-spacing:.08em;text-transform:uppercase
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#276fcb;
+      font-weight:700;
+      background:#eaf3ff;
+      border:1px solid #d8e8ff;
+      border-radius:999px;
+      padding:5px 10px;
     }
-    h1{font-size:clamp(2rem,4.3vw,3.4rem);line-height:1.12;margin:12px 0}
+    h1{
+      margin:12px 0 10px;
+      line-height:1.18;
+      font-size:clamp(1.95rem,4.5vw,3.2rem);
+      color:#0f223f;
+    }
     .lead{color:var(--muted);max-width:58ch}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-    .trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;color:var(--muted);font-size:.92rem}
-    .hero-card{
-      background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
-      border:1px solid var(--border);border-radius:var(--radius);
-      padding:20px;box-shadow:var(--shadow)
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .trust-row{
+      display:flex;gap:16px;flex-wrap:wrap;
+      margin-top:15px;color:#5f738f;font-size:.92rem;
     }
-    .hero-card h3{margin:0 0 8px}
-    .hero-card p{margin:0;color:var(--muted)}
 
-    section{padding:30px 0}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:18px;
-    }
-    .card h4{margin:0 0 8px}
-    .card p{margin:0;color:var(--muted)}
-
-    .review-wrap{
-      background:linear-gradient(160deg,rgba(67,212,255,.09),rgba(125,255,186,.08));
-      border:1px solid var(--border);
+      background:var(--surface);
+      border:1px solid var(--line);
       border-radius:var(--radius);
-      padding:26px;
       box-shadow:var(--shadow);
     }
-    .review-wrap h2{margin-top:0}
-    .review-wrap ul{margin:8px 0 0 0;padding-left:18px;color:var(--muted)}
-    .review-wrap li{margin:8px 0}
-    .rating{
-      margin-top:14px;
-      font-weight:700;
-      color:#ffe28a;
+    .hero-card{padding:20px}
+    .hero-card h3{margin:0 0 8px}
+    .hero-card p{margin:0;color:var(--muted)}
+    .score{
+      margin-top:12px;
+      color:#0f4e9d;
+      font-weight:800;
+      font-size:.95rem;
     }
 
-    .quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .quote{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:15px}
-    .quote b{display:block;margin-top:8px}
+    section{padding:20px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .mini{padding:18px}
+    .mini h4{margin:0 0 7px}
+    .mini p{margin:0;color:var(--muted)}
+
+    .review{
+      padding:24px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+    .review h2{margin-top:0}
+    .review h3{margin-top:18px}
+    .review p,.review li{color:var(--muted)}
+    .review ul{padding-left:20px}
+    .quote{
+      margin:14px 0;
+      padding:13px 14px;
+      background:#f3f8ff;
+      border:1px solid #dbe9ff;
+      border-radius:12px;
+      color:#365778;
+      font-style:italic;
+    }
+
+    .faq details{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px 14px;
+      margin-bottom:10px;
+      box-shadow:var(--shadow);
+    }
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq p{margin:8px 0 0;color:var(--muted)}
+
+    .email-box{
+      padding:24px;
+      text-align:center;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+    .email-box p{color:var(--muted)}
+    .email-form{
+      max-width:520px;
+      margin:12px auto 0;
+      display:flex;gap:10px;flex-wrap:wrap;
+    }
+    .email-form input{
+      flex:1;
+      min-width:220px;
+      padding:12px 14px;
+      border:1px solid #cfdced;
+      border-radius:10px;
+      font-size:15px;
+    }
+    .email-form button{
+      padding:12px 16px;
+      border:none;
+      border-radius:10px;
+      background:#1f7ae0;
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+    }
 
     .cta{
+      margin-top:4px;
+      padding:28px 18px;
       text-align:center;
-      padding:28px;
+      background:linear-gradient(180deg,#ffffff,#f2f8ff);
+      border:1px solid #d9e8fb;
       border-radius:18px;
-      border:1px solid var(--border);
-      background:linear-gradient(150deg,rgba(67,212,255,.14),rgba(125,255,186,.11));
       box-shadow:var(--shadow);
     }
     .cta p{color:var(--muted)}
-    .note{font-size:.85rem;color:var(--muted)}
-    footer{padding:22px 0 80px;text-align:center;color:var(--muted);font-size:.87rem}
-
-    .sticky{
-      position:fixed;left:0;right:0;bottom:0;z-index:1000;
-      padding:10px 4%;
-      display:flex;justify-content:space-between;align-items:center;gap:10px;
-      background:rgba(9,13,27,.92);border-top:1px solid var(--border)
+    footer{
+      padding:24px 0 38px;
+      text-align:center;
+      font-size:.88rem;
+      color:#71839a;
     }
 
-    @media (max-width:900px){
-      .hero,.grid-3,.quote-grid{grid-template-columns:1fr}
+    @media (max-width:920px){
+      .hero,.grid-3{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
   <div class="topbar">
     <div class="container topbar-inner">
-      <span class="pill">Limited-time access</span>
-      <a class="btn" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">View Official Offer</a>
+      <div class="brand">Citrus Burn Review</div>
+      <span class="badge">Independent • Transparent • Non-medical</span>
     </div>
   </div>
 
   <header class="container hero">
     <div>
-      <span class="kicker">Independent review page</span>
-      <h1>Citrus Burn Review: A Simple Way to Support Weight-Loss Goals</h1>
+      <span class="kicker">Honest Product Overview</span>
+      <h1>A Clean, Professional Review of Citrus Burn</h1>
       <p class="lead">
-        Looking for extra support with cravings, consistency, and daily energy?
-        Citrus Burn is designed for people who want a practical tool to complement healthy habits.
+        This page is designed for clarity and trust. No hype, no fake promises — just a realistic breakdown
+        of what Citrus Burn may help with, who it fits best, and what to expect.
       </p>
-      <div class="actions">
-        <a class="btn" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">Check Citrus Burn Now</a>
-        <a class="btn btn-outline" href="#review">Read Full Review</a>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">View Official Offer</a>
+        <a class="btn btn-light" href="#full-review">Read Full Review</a>
       </div>
-      <div class="trust">
-        <span>🔒 Secure checkout</span>
-        <span>⚡ Fast access</span>
-        <span>📄 Full details on official page</span>
+      <div class="trust-row">
+        <span>🔒 Secure checkout on official page</span>
+        <span>📄 Transparent affiliate disclosure</span>
+        <span>✅ Mobile-friendly experience</span>
       </div>
     </div>
 
-    <div class="hero-card">
-      <h3>What this product aims to do</h3>
+    <div class="card hero-card">
+      <h3>Quick Summary</h3>
       <p>
-        Citrus Burn is positioned as a weight-management supplement that may help users stay on track with appetite control,
-        motivation, and daily routine adherence when combined with nutrition and activity.
+        Citrus Burn is presented as a support supplement for weight-management consistency.
+        It may be useful for people trying to improve daily habits (nutrition, activity, routine discipline).
       </p>
-      <div class="rating">★★★★★ 4.7/5 User Interest</div>
+      <div class="score">Overall impression: Practical support tool (not a miracle fix)</div>
     </div>
   </header>
 
   <section class="container">
     <div class="grid-3">
-      <article class="card">
-        <h4>Appetite Support</h4>
-        <p>Some users report better control over cravings, helping them stay consistent with calorie goals.</p>
+      <article class="card mini">
+        <h4>Craving Management</h4>
+        <p>Some users may feel better control over random snacking and impulse eating.</p>
       </article>
-      <article class="card">
-        <h4>Daily Energy</h4>
-        <p>Extra energy can make workouts and day-to-day movement easier to maintain.</p>
-      </article>
-      <article class="card">
+      <article class="card mini">
         <h4>Routine Consistency</h4>
-        <p>A simple daily supplement can reinforce healthy habits and long-term commitment.</p>
+        <p>Daily supplementation can help reinforce commitment and healthy structure.</p>
+      </article>
+      <article class="card mini">
+        <h4>Lifestyle Alignment</h4>
+        <p>Works best when combined with balanced food, hydration, and regular movement.</p>
       </article>
     </div>
   </section>
 
-  <section id="review" class="container">
-    <div class="review-wrap">
-      <h2>Citrus Burn Review (English)</h2>
+  <section id="full-review" class="container">
+    <article class="review">
+      <h2>Long-Form Review</h2>
+
+      <h3>What Citrus Burn Is</h3>
       <p>
-        Citrus Burn is best viewed as a support tool, not a magic fix.
-        People who see the best outcomes are usually those who combine it with balanced meals, hydration, sleep, and regular activity.
+        Citrus Burn is marketed as a weight-management aid. The product is generally positioned toward adults
+        who want extra support while working on healthier routines. The key point: it should be treated as a supportive add-on,
+        not a replacement for nutrition and activity fundamentals.
       </p>
+
+      <h3>How It May Help</h3>
       <ul>
-        <li><strong>Who it may help:</strong> Adults trying to lose weight and improve routine consistency.</li>
-        <li><strong>Main potential benefit:</strong> Better control over cravings and improved day-to-day momentum.</li>
-        <li><strong>Best use case:</strong> As part of a complete lifestyle strategy, not as a standalone solution.</li>
-        <li><strong>Expectation:</strong> Progress can be gradual; individual results vary.</li>
+        <li><strong>Daily discipline:</strong> A consistent routine can be easier when users have a simple daily system.</li>
+        <li><strong>Appetite awareness:</strong> Some people report better control over cravings and snack behavior.</li>
+        <li><strong>Momentum support:</strong> Feeling more structured can improve follow-through with workouts and meal planning.</li>
       </ul>
-      <p style="margin-top:14px;">
-        <strong>Final take:</strong> If you want an easy add-on to your fat-loss plan, Citrus Burn is worth considering—especially if your focus is discipline and consistency.
+
+      <div class="quote">“The best results usually come from consistency, not intensity.”</div>
+
+      <h3>What To Expect Realistically</h3>
+      <p>
+        People often get better outcomes when expectations are realistic: gradual progress, steady habits, and regular tracking.
+        If someone expects instant transformation without lifestyle effort, this product is unlikely to meet that expectation.
       </p>
-      <a class="btn" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" style="margin-top:10px;">Go to Official Citrus Burn Page</a>
-    </div>
+
+      <h3>Who This Is Best For</h3>
+      <p>
+        Citrus Burn may be suitable for adults already trying to improve habits and looking for additional support.
+        It is less suitable for anyone seeking an immediate or effortless solution.
+      </p>
+
+      <h3>Final Verdict</h3>
+      <p>
+        As an independent perspective: Citrus Burn can be worth considering if your goal is better routine adherence
+        and long-term consistency. The strongest approach is combining it with balanced meals, movement, sleep quality,
+        and hydration.
+      </p>
+
+      <p style="font-size:.9rem;color:#7a8ca4;">
+        Disclaimer: This content is for informational purposes only and does not replace professional medical advice.
+        Individual results vary.
+      </p>
+    </article>
+  </section>
+
+  <section class="container faq">
+    <details>
+      <summary>Is this an official Citrus Burn website?</summary>
+      <p>No, this is an independent review page with an affiliate link to the official offer page.</p>
+    </details>
+    <details>
+      <summary>Can this product work without lifestyle changes?</summary>
+      <p>Usually no. Better outcomes come when it is paired with practical daily habits.</p>
+    </details>
+    <details>
+      <summary>Where can I check full details and pricing?</summary>
+      <p>Use the official offer button to view current details directly from the source.</p>
+    </details>
   </section>
 
   <section class="container">
-    <div class="quote-grid">
-      <article class="quote">
-        “I liked how easy it was to include in my daily plan.”
-        <b>— Verified customer style feedback</b>
-      </article>
-      <article class="quote">
-        “It helped me stay focused on my goals and avoid random snacking.”
-        <b>— Verified customer style feedback</b>
-      </article>
-      <article class="quote">
-        “Not magic, but useful when combined with better food choices.”
-        <b>— Verified customer style feedback</b>
-      </article>
+    <div class="email-box">
+      <h3>Want Weekly Wellness Tips by Email?</h3>
+      <p>Join a simple newsletter for practical fat-loss and habit-building tips.</p>
+      <form class="email-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p style="font-size:.8rem;margin-top:10px;">We respect privacy. Unsubscribe anytime.</p>
     </div>
   </section>
 
   <section class="container">
     <div class="cta">
-      <h2>Ready to see full product details?</h2>
-      <p>Visit the official page now to check ingredients, pricing, and current availability.</p>
-      <a class="btn" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">View Official Offer</a>
-      <p class="note" style="margin-top:12px;">
-        Disclaimer: This page is informational and may contain affiliate links. This is not medical advice.
-      </p>
+      <h2>Ready to Check the Official Offer?</h2>
+      <p>See ingredients, pricing, and availability directly on the official page.</p>
+      <a class="btn btn-primary" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">Go to Official Citrus Burn Page</a>
     </div>
   </section>
 
   <footer class="container">
-    © 2026 Independent review page. Individual results vary.
+    This page may contain affiliate links. No extra cost for you.
   </footer>
-
-  <div class="sticky">
-    <span>Start your journey today</span>
-    <a class="btn" href="https://5d29cth-xdgk-3w9qp5o7z7poh.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener">Buy Now</a>
-  </div>
 </body>
 </html>
